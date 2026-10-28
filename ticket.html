@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <h1>Ingressos do Parque de Diversões</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <form method="post" action="compra-ingresso.php">
+
+        <h3>Informações do Responsável</h3>
+
+        <div>
+            <label for="nome-responsavel">Nome:</label>
+            <input type="text" id="nome-responsavel" name="nome-responsavel"
+                   minlength="5" maxlength="50" required>
+        </div>
+
+        <div>
+            <label for="cpf-responsavel">CPF:</label>
+            <input type="text" id="cpf-responsavel" name="cpf-responsavel"
+                   pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                   placeholder="000.000.000-00" required>
+        </div>
+
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="nascimento-responsavel">Data de Nascimento:</label>
+            <input type="date" id="nascimento-responsavel"
+                   name="nascimento-responsavel" required>
+        </div>
+
+        <h3>Informações da Criança</h3>
+
+        <div>
+            <label for="nome-crianca">Nome:</label>
+            <input type="text" id="nome-crianca" name="nome-crianca"
+                   minlength="5" maxlength="50" required>
+        </div>
+
+        <div>
+            <label for="cpf-crianca">CPF:</label>
+            <input type="text" id="cpf-crianca" name="cpf-crianca"
+                   pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                   placeholder="000.000.000-00" required>
+        </div>
+
+        <div>
+            <label for="nascimento-crianca">Data de Nascimento:</label>
+            <input type="date" id="nascimento-crianca"
+                   name="nascimento-crianca" required>
+        </div>
+
+        <h3>Informações do Cartão</h3>
+
+        <div>
+            <label for="numero-cartao">Número do cartão:</label>
+            <input type="text" id="numero-cartao" name="numero-cartao"
+                   pattern="[0-9]{16}" maxlength="16"
+                   inputmode="numeric" required>
+        </div>
+
+        <div>
+            <label for="validade-mes">Validade (mês):</label>
+            <input type="number" id="validade-mes" name="validade-mes"
+                   min="1" max="12" required>
+        </div>
+
+        <div>
+            <label for="validade-ano">Validade (ano):</label>
+            <input type="number" id="validade-ano" name="validade-ano"
+                   min="2026" max="2036" required>
+        </div>
+
+        <div>
+            <label for="cvc">CVC:</label>
+            <input type="number" id="cvc" name="cvc"
+                   min="1" max="999" required>
+        </div>
+
+        <div>
+            <label for="nome-cartao">Nome no cartão:</label>
+            <input type="text" id="nome-cartao" name="nome-cartao"
+                   minlength="5" maxlength="50" required>
+        </div>
+
+        <button type="submit">Finalizar compra</button>
+
+    </form>
+</body>
+</html>
