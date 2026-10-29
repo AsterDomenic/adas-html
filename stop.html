@@ -1,0 +1,170 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Stop</title>
+    <link rel="stylesheet" href="stop.css">
+    </head>
+    <body>
+    <h1>Stop - Adedonha</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <form method="get" action="salvar-stop.php">
+
+    <fieldset>
+    <legend>Informações dos Jogadores</legend>
+
+    <div>
+    <label for="nome-jogador1">Nome do Jogador 1:</label>
+    <input type="text" id="nome-jogador1" name="nome-jogador1"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="nome-jogador2">Nome do Jogador 2:</label>
+    <input type="text" id="nome-jogador2" name="nome-jogador2"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="nome-jogador3">Nome do Jogador 3:</label>
+    <input type="text" id="nome-jogador3" name="nome-jogador3"
+        minlength="3" maxlength="30">
+    </div>
+
+    <div>
+    <label for="nome-jogador4">Nome do Jogador 4:</label>
+    <input type="text" id="nome-jogador4" name="nome-jogador4"
+        minlength="3" maxlength="30">
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Configuração da Rodada</legend>
+
+    <div>
+    <label for="letra-rodada">Letra da Rodada:</label>
+    <input type="text" id="letra-rodada" name="letra-rodada"
+        pattern="[A-Za-z]" minlength="1" maxlength="1"
+        placeholder="A" required>
+    </div>
+
+    <div>
+    <label for="numero-rodada">Número da Rodada:</label>
+    <input type="number" id="numero-rodada" name="numero-rodada"
+        min="1" max="10" value="1" required>
+    </div>
+
+    <div>
+    <label for="tempo-rodada">Tempo da Rodada (segundos):</label>
+    <input type="number" id="tempo-rodada" name="tempo-rodada"
+        min="10" max="300" value="60" required>
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Respostas da Rodada</legend>
+
+    <div>
+    <label for="nome-categoria">Nome:</label>
+    <input type="text" id="nome-categoria" name="nome-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="animal-categoria">Animal:</label>
+    <input type="text" id="animal-categoria" name="animal-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="cidade-categoria">Cidade:</label>
+    <input type="text" id="cidade-categoria" name="cidade-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="pais-categoria">País:</label>
+    <input type="text" id="pais-categoria" name="pais-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="fruta-categoria">Fruta:</label>
+    <input type="text" id="fruta-categoria" name="fruta-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="cor-categoria">Cor:</label>
+    <input type="text" id="cor-categoria" name="cor-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="profissao-categoria">Profissão:</label>
+    <input type="text" id="profissao-categoria" name="profissao-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="comida-categoria">Comida:</label>
+    <input type="text" id="comida-categoria" name="comida-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="objeto-categoria">Objeto:</label>
+    <input type="text" id="objeto-categoria" name="objeto-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+
+    <div>
+    <label for="filme-serie-categoria">Filme ou Série:</label>
+    <input type="text" id="filme-serie-categoria"
+        name="filme-serie-categoria"
+        minlength="3" maxlength="30" required>
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Pontuação dos Jogadores</legend>
+
+    <div>
+    <label for="pontuacao-jogador-1">Pontuação do Jogador 1:</label>
+    <input type="number" id="pontuacao-jogador-1"
+        name="pontuacao-jogador-1"
+        min="0" max="1000" value="0" required>
+    </div>
+
+    <div>
+    <label for="pontuacao-jogador-2">Pontuação do Jogador 2:</label>
+    <input type="number" id="pontuacao-jogador-2"
+        name="pontuacao-jogador-2"
+        min="0" max="1000" value="0" required>
+    </div>
+
+    <div>
+    <label for="pontuacao-jogador-3">Pontuação do Jogador 3:</label>
+    <input type="number" id="pontuacao-jogador-3"
+        name="pontuacao-jogador-3"
+        min="0" max="1000" value="0">
+    </div>
+
+    <div>
+    <label for="pontuacao-jogador-4">Pontuação do Jogador 4:</label>
+    <input type="number" id="pontuacao-jogador-4"
+        name="pontuacao-jogador-4"
+        min="0" max="1000" value="0">
+    </div>
+    </fieldset>
+
+    <button type="submit">Enviar Respostas</button>
+    <button type="reset">Limpar Formulário</button>
+
+    </form>
+    </body>
+    </html>
