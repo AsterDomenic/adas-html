@@ -1,0 +1,245 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 30px 20px;
+    color: #f0f7ff;
+
+    /* Fundo espacial em degradê azul */
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 140, 255, 0.25), transparent 30%),
+        radial-gradient(circle at 85% 75%, rgba(104, 75, 255, 0.22), transparent 35%),
+        linear-gradient(135deg, #020617, #071b42, #102f68, #030b20);
+
+    background-attachment: fixed;
+}
+
+/* ================================
+   TÍTULO
+================================ */
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+    text-shadow:
+        0 0 10px #168bff,
+        0 0 25px #0875ff,
+        0 0 40px #0044cc;
+}
+
+/* ================================
+   LINK VOLTAR
+================================ */
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 25px;
+    padding: 10px 22px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #087cf0, #5145cd);
+    border: 1px solid #76c8ff;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(56, 165, 255, 0.7);
+}
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+form {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px;
+
+    background: rgba(5, 20, 48, 0.88);
+    border: 1px solid rgba(92, 180, 255, 0.55);
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 25px rgba(0, 110, 255, 0.2),
+        0 0 60px rgba(0, 40, 120, 0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+/* ================================
+   GRUPOS DO FORMULÁRIO
+================================ */
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 22px;
+    border: 1px solid #286bb5;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(12, 44, 91, 0.65),
+        rgba(12, 25, 62, 0.65)
+    );
+}
+
+legend {
+    padding: 8px 14px;
+    color: #a9ddff;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    background: #0b2c60;
+    border: 1px solid #398fe5;
+    border-radius: 8px;
+
+    text-shadow: 0 0 8px rgba(60, 165, 255, 0.5);
+}
+
+/* Cada campo fica organizado em uma linha */
+
+fieldset div {
+    margin-bottom: 17px;
+}
+
+fieldset div:last-child {
+    margin-bottom: 0;
+}
+
+/* ================================
+   TEXTOS DOS CAMPOS
+================================ */
+
+label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #d9ecff;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* ================================
+   CAMPOS DE ENTRADA
+================================ */
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+
+    color: #ffffff;
+    font-size: 1rem;
+
+    background: rgba(2, 12, 32, 0.85);
+    border: 1px solid #315e9b;
+    border-radius: 8px;
+
+    outline: none;
+    transition: 0.25s;
+}
+
+/* Cor do texto de exemplo */
+
+input::placeholder {
+    color: #829bbd;
+}
+
+/* Brilho ao clicar no campo */
+
+input:focus {
+    border-color: #50b9ff;
+    box-shadow: 0 0 12px rgba(39, 160, 255, 0.55);
+    background: rgba(8, 29, 65, 0.95);
+}
+
+/* ================================
+   BOTÕES
+================================ */
+
+button {
+    padding: 13px 22px;
+    margin: 5px 8px 5px 0;
+
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Botão de enviar */
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #087cf0, #5145cd);
+    box-shadow: 0 4px 15px rgba(0, 115, 255, 0.3);
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #249dff, #6658f5);
+    box-shadow: 0 0 20px rgba(37, 157, 255, 0.65);
+}
+
+/* Botão de limpar */
+
+button[type="reset"] {
+    background: linear-gradient(135deg, #334b70, #182944);
+    border: 1px solid #6483ad;
+}
+
+button[type="reset"]:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #4b6388, #263d60);
+    box-shadow: 0 0 15px rgba(117, 167, 230, 0.3);
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 16px 12px;
+    }
+
+    button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
